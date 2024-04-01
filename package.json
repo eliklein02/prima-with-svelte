@@ -1,0 +1,37 @@
+{
+  "name": "prima-with-svelte",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@fontsource/fira-mono": "^4.5.10",
+    "@neoconfetti/svelte": "^1.0.0",
+    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "@types/leaflet": "^1.9.8",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "postcss-load-config": "^5.0.2",
+    "svelte": "^4.2.7",
+    "vite": "^5.0.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "@google-cloud/storage": "^7.9.0",
+    "@prisma/client": "^5.11.0",
+    "bits-ui": "^0.21.1",
+    "cloudinary": "^2.0.3",
+    "clsx": "^2.1.0",
+    "leaflet": "^1.9.4",
+    "mapbox-gl": "^3.2.0",
+    "nodemailer": "^6.9.12",
+    "puppeteer": "^22.6.1",
+    "tailwind-merge": "^2.2.2",
+    "tailwind-variants": "^0.2.1",
+    "ts-node": "^10.9.2"
+  }
+}

@@ -1,0 +1,561 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family:"lust-sans";
+	src:url("https://use.typekit.net/af/63e0ec/00000000000000007735ddd3/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/63e0ec/00000000000000007735ddd3/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/63e0ec/00000000000000007735ddd3/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+	font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+}
+
+@font-face {
+	font-family:"bicyclette";
+	src:url("https://use.typekit.net/af/87f362/00000000000000007735acdc/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/87f362/00000000000000007735acdc/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/87f362/00000000000000007735acdc/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+	}
+
+body {
+	height: 100%;
+	margin: 0;
+	/* background-image: url('/src/img/primadesign3.jpg'); */
+	/* background-image: radial-gradient(circle at center, antiquewhite, rgba(67, 111, 120, 0.174) 30%, rgba(222, 198, 153, 0.4) 60%, white); */
+	color: #436f78;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed ;
+	background-repeat: no-repeat;
+}
+
+#menu-open-div {
+	display: none;
+}
+
+.main-route-body {
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+* {
+	box-sizing: border-box;
+	/* border: 1px solid yellow; */
+}
+
+.mobile-menu {
+	display: none;
+}
+
+.parallax-1-container {
+	height: 70vh;
+	width: 100%;
+	background-position: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/src/img/residential-brooklyn.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.prima-text-container {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-right: 3rem;
+	padding-left: 3rem;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Montserrat;
+	color: #dec699;
+	line-height: 1;
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+.prima-text {
+	font-size: 7rem;
+	font-family: "lust-sans";
+	margin: 0;
+	
+}
+
+.residential-text {
+	font-size: 2.5rem;
+	font-family: "bicyclette";
+	font-weight: 200;
+	margin: 0;
+}
+
+.yatll-text {
+	font-size: 1.5rem;
+	font-family: "lust-sans";
+	margin: 20px;
+	
+}
+
+.featured-properties-text-container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+.featured-properties-text {
+	font-size: 2.5rem;
+	font-family: Montserrat;
+	text-align: center;
+
+}
+
+.featured-properties-container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.featured-property {
+	width: 100%;
+	height: auto;
+	margin-inline: 1rem;
+	background-color: #dec699;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor: pointer;
+	z-index: -1;
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+
+}
+/* 
+.featured-property:hover {
+    transform: scale(1.05);
+} */
+
+.featured-property-1-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 17rem;
+}
+
+
+.featured-property-text {
+	height: 8rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 1.5rem;
+	color: #436f78;
+}
+
+a.property-image-link {
+	display: block;
+	text-decoration: none;
+	color: #436f78;
+	width: 20%;
+	margin-inline: 1rem;
+	transition: transform 0.2s ease-in-out;
+    position: relative;
+}
+
+a.property-image-link:hover {
+	transform: scale(1.05);
+}
+
+.city-state {
+	font-size: 1.2rem;
+	font-family: Montserrat;
+	color: #436f78;
+}
+
+.ers-text {
+	font-size: 2.5rem;
+	font-family: Montserrat;
+	text-align: center;
+}
+
+/* parallax on main page */
+
+.parallax-container-content-each {
+	min-height: 45vh;
+	height: auto;
+	width: 85%;
+	display: flex;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.parallax-text-side {
+	background-image: radial-gradient(circle at center, white, rgba(67, 111, 120, 0.3) 30%, rgba(222, 198, 153, 0.4) 60%, white);
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+	margin: 0;
+	padding: 2rem;
+	font-family: Montserrat;
+}
+
+.parallax-text-side-title {
+	font-size: 2rem;
+	margin: 0;
+}
+
+.parallax-text-side-text {
+	font-size: 1.2rem;
+	margin: 0;
+	line-height: 1.5;
+
+}
+
+.properties-link {
+	text-decoration: none;
+	color: #436f78;
+	font-size: 1.5rem;
+	font-family: Montserrat;
+	background-color: #dec699;
+	padding: 0.75rem;
+	border: 1px solid #436f78;
+	border-radius: 2.5px;
+}
+
+.parallax-image-side {
+	width: 50%;
+}
+
+.within-right {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.red {
+	background-image: url('/src/img/handkey.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.blue {
+	background-image: url('/src/img/brainstorm.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* Layout styles */
+
+.navbar-main {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0.7rem;
+}
+
+.logo {
+	margin-left: 25px;
+	margin-right: 30px;
+	vertical-align: baseline;
+}
+
+a.navbar-links {
+	text-decoration: none;
+	color: #dec699;
+	font-size: 1.7rem;
+	margin-right: 25px;
+	font-family: bicyclette;
+}
+
+/* about page styles */
+
+.about-page-body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	/* background-image: radial-gradient(circle at center, white, rgba(67, 111, 120, 0.3) 30%, rgba(222, 198, 153, 0.4) 60%, white); */
+}
+
+.navbar-all {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0.7rem;
+}
+
+.about-us-text-container {font-family: Montserrat;
+	color: #436f78;
+	display:flex;
+	flex-direction: row;
+	height: 100vh;
+}
+
+.about-us-text-half {
+	width: 60%;
+	/* padding: 2rem; */
+	/* text-align: center; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-us-title-text {
+	margin: 0;
+	font-size: 3rem;
+}
+
+.about-us-text {
+	font-size: 1.5rem;
+	width: 65%;
+	line-height: 1.5;
+	margin: 0 auto;
+}
+
+.about-us-services-half {
+	width: 40%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* properties page*/
+
+.masonry {
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
+	background-image: radial-gradient(circle at center, white, rgba(67, 111, 120, 0.3) 30%, rgba(222, 198, 153, 0.4) 60%, white);
+}
+
+.properties-page-each-property-link {
+	text-decoration: none;
+	color: #436f78;
+}
+
+.masonry-item-img {
+	background-size: cover;
+	height: 20rem;
+}
+
+.masonry-item-text-container {
+	text-align: center;
+}
+
+p.masonry-item-address {
+	font-size: 2rem;
+	margin-bottom: 0;
+	text-decoration: none;
+}
+
+.masonry-item-city-state {
+	font-size: 1.5rem;
+	margin-top: 0;
+}
+
+
+@media (max-width: 786px) {
+	.navbar-main {
+		display: none;
+	}
+
+	.mobile-menu {
+		display: none;
+		/* z-index: 12; */
+		/* position: relative; */
+	}
+
+	#menu-open-div {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		margin: 1rem;
+		color: #dec699;
+		/* background-color: #436f78; */
+		background-image: linear-gradient(rgba(67, 111, 120, 0.5), rgba(67, 111, 120, 0.5));
+		z-index: 15;
+		display: flex;
+		padding: 0.5rem;
+		border-radius: 3px;
+	}
+
+	#menu-close {
+		color: #dec699;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 1rem;
+	}
+
+	.mobile-menu {
+		display: none;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		height: 40vh;
+		width: 100%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.navbar-mobile-links {
+		margin: 1rem;
+		font-size: 2rem;
+		text-decoration: none;
+		color: white;
+		font-family: Montserrat;
+		color: #dec699;
+	}
+
+
+	.navbar-all {
+		display: none;
+	}
+
+	.parallax-1-container {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/residential-brooklyn.jpg');
+
+	}
+
+	.prima-text-container {
+		padding: 0;
+		background-image: none;
+	}
+
+	.prima-text {
+		font-size: 3rem;
+	}
+
+	.residential-text {
+		font-size: 1.5rem;
+	}	
+
+	.yatll-text {
+		font-size: 1.5rem;
+		text-align: center;
+		margin: 10px;
+	}
+
+	.ers-text {
+		font-size: 2rem;
+	}
+
+	.featured-properties-text {
+		font-size: 1.5rem;
+		margin: 3vh;
+		width: 100%;
+	}
+
+	.featured-properties-container {
+		flex-direction: column;
+		height: auto;
+		width: 90%;
+	}
+
+	a.property-image-link {
+		z-index: -1;
+	}
+
+	.featured-property {
+		width: 100%;
+		height: auto;
+		margin-bottom: 1rem;
+		margin-top: 0;
+		margin-inline: 0;
+		border-radius: 0%;
+	}
+
+	a.property-image-link {
+		display: block;
+		text-decoration: none;
+		color: #436f78;
+		width: 100%;
+	}
+
+	.featured-property-1-image {
+		height: 17rem;
+	}
+
+	.featured-property-2-image {
+		height: 14rem;
+	}
+
+	.featured-property-3-image {
+		height: 14rem;
+	}
+
+	.featured-property-text {
+		font-size: 1rem;
+	}
+
+	.ers-text {
+		font-size: 1.5rem ;
+	}
+
+	.parallax-container-content-each {
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.parallax-container-content-each-2 {
+		flex-direction: column-reverse;
+	}
+
+	.within-right {
+		height: 14rem;
+	}
+	
+
+	.parallax-text-side {
+		width: 100%;
+		margin: 1rem auto;
+		padding: 3rem;
+		font-size: 1.75rem;
+	}
+
+	.parallax-image-side {
+		width: 100%;
+		margin: 0 auto;
+		height: auto;
+	}
+
+	.properties-link {
+		font-size: 1.25rem;
+		padding: 0.75;
+	}
+
+	.masonry {
+		display: flex;
+		flex-direction: column;
+	}
+}
