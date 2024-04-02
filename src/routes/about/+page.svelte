@@ -39,60 +39,134 @@
                 style="font-size:36px">menu</i
             >
         </diV>
-        <div class="about-us-text-half">
-            <!-- <p class="about-us-title-text">Who We Are</p> -->
-            <div class="about-us-text">
-                <div class="prima-in-about">PRIMA</div>
-                <div class="residential-in-about">RESIDENTIAL</div>
-                management company is a versatile organization that caters to a diverse
-                range of needs with expertise and a dedicated team. We offer comprehensive
-                solutions for property needs, including leasing, tenant relations,
-                maintenance, and asset management. Our vision is to be a trusted
-                partner for clients in achieving their goals by staying up-to-date
-                with industry trends and delivering exceptional results for long-term
-                success.
-                <!-- PRIMA RESIDENTIAL management company is a comprehensive and
-                versatile organization that caters to a diverse range of needs
-                and requirements. With a wealth of expertise and a dedicated
-                team, we offer a wide array of services designed to streamline
-                operations and optimize performance. From a personal strategic
-                planning and financial management to human resources and
-                operational efficiency, we provide comprehensive solutions that
-                empower businesses to thrive in today's competitive landscape. -->
-                <!-- PRIMA RESIDENTIAL takes pride in its holistic approach to management,
-                addressing every aspect of the property needs, we understand that
-                success lies in the ability to adapt and evolve, which is why we
-                stay up-to-date with the latest industry trends and best practices.
-                By offering a comprehensive suite of services including leasing,
-                tenant relations, prompt maintenance, and full asset management.
-                We take pride in our personal relationship with landlords and we
-                aim to become a trusted partner for our clients helping them navigate
-                challenges and achieve their goals. With our unwavering commitment
-                to excellence and a client-centric approach, our management company
-                is poised to deliver exceptional results and drive long-term success
-                for our clients -->
+        <div class="about-page-row-flex">
+            <div class="about-us-text-half">
+                <div class="about-us-text">
+                    <div class="about-image-logo-container">
+                        <img
+                            src="/src/img/logo-new.png"
+                            alt=""
+                            class="logo-in-about"
+                        />
+                    </div>
+
+                    <div class="prima-in-about">PRIMA</div>
+                    <div class="residential-in-about">RESIDENTIAL</div>
+                    management company is a versatile organization that caters to
+                    a diverse range of needs with expertise and a dedicated team.
+                    We offer comprehensive solutions for property needs, including
+                    leasing, tenant relations, maintenance, and asset management.
+                    Our vision is to be a trusted partner for clients in achieving
+                    their goals by staying up-to-date with industry trends and delivering
+                    exceptional results for long-term success.
+                </div>
             </div>
-        </div>
-        <div class="about-us-services-half">
-            <!-- <img
-                class="prima-image-about"
-                src="/src/img/workers.jpg"
-                alt="prima-ad"
-            /> -->
-            <i class="fa fa-handshake-o icon"></i>
+            <div class="about-us-services-half">
+                <div class="services">
+                    <div class="service">
+                        <img
+                            src="/src/img/quality-badge-thumbs-up-icon.svg"
+                            alt=""
+                            height="115px"
+                            width="115px"
+                            style="filter: invert(43%) sepia(9%) saturate(1655%) hue-rotate(143deg) brightness(89%) contrast(89%);
+                            "
+                        />
+                        Tenant Relations
+                    </div>
+                    <div class="service">
+                        <img
+                            src="/src/img/building-icon.svg"
+                            alt=""
+                            height="115px"
+                            width="115px"
+                            style="filter: invert(43%) sepia(9%) saturate(1655%) hue-rotate(143deg) brightness(89%) contrast(89%);
+                            "
+                        /> Asset Management
+                    </div>
+                    <div class="service">
+                        <img
+                            src="/src/img/home-insurance-icon.svg"
+                            alt=""
+                            height="115px"
+                            width="115px"
+                            style="filter: invert(43%) sepia(9%) saturate(1655%) hue-rotate(143deg) brightness(89%) contrast(89%);
+                            "
+                        /> Leasing
+                    </div>
+                    <div class="service">
+                        <img
+                            src="/src/img/financial-advisor-icon.svg"
+                            alt=""
+                            height="115px"
+                            width="115px"
+                            style="filter: invert(43%) sepia(9%) saturate(1655%) hue-rotate(143deg) brightness(89%) contrast(89%);
+                            "
+                        /> Strategic Planning
+                    </div>
+                    <div class="service">
+                        <img
+                            src="/src/img/market-research-icon.svg"
+                            alt=""
+                            height="115px"
+                            width="115px"
+                            style="filter: invert(43%) sepia(9%) saturate(1655%) hue-rotate(143deg) brightness(89%) contrast(89%);
+                            "
+                        />Finance Management
+                    </div>
+                    <div class="service">
+                        <img
+                            src="/src/img/screwdriver-icon.svg"
+                            alt=""
+                            height="115px"
+                            width="115px"
+                            class="service-icon"
+                            style="filter: invert(43%) sepia(9%) saturate(1655%) hue-rotate(143deg) brightness(89%) contrast(89%);"
+                        />Maintenance
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <style>
-    .icon {
-        font-size: 450px;
+    .logo-in-about {
+        height: 10rem;
+        width: auto;
         position: relative;
         top: 0;
-        right: 50px;
-        color: #cee0e3;
-        z-index: -1;
-        /* transform: rotateZ(35deg); */
+        right: 15px;
+    }
+
+    .services {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        height: 75%;
+    }
+
+    .service {
+        background-color: #f7f7f7;
+        margin: 0.3rem;
+        display: flex;
+        padding: 0.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid black; */
+        font-size: 1.2rem;
+        gap: 1rem;
+        color: #436f78;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .about-page-row-flex {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
     }
 
     .prima-in-about {
@@ -105,13 +179,10 @@
     .residential-in-about {
         display: block;
         font-size: 2rem;
-        /* font-weight: bold; */
         margin-top: 0;
     }
-    .prima-image-about {
-        height: 45%;
-        width: auto;
-        overflow: hidden;
+
+    .about-us-services-half {
         margin: 0 auto;
     }
 
@@ -120,49 +191,57 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* justify-content: center;
-            margin-top: 5rem; */
+            text-align: center;
+            width: 100%;
+            height: auto;
         }
 
         .about-us-text-half {
-            margin-bottom: 3rem;
             width: 100%;
+            padding-bottom: 0;
+            margin-block: 2rem;
         }
-
-        .prima-in-about {
-            margin-top: 5vh;
-        }
-
-        /* .prima-in-about {
-            margin-top: 5rem;
-            font-size: 2.2rem;
-            font-weight: bold;
-            margin-bottom: 0;
-            font-family: "lust-sans";
-        }
-
-        .residential-in-about {
-            font-size: 1.9rem;
-            font-weight: bold;
-            margin-top: 0;
-        } */
 
         .prima-image-about {
             height: 14rem;
             width: 80%;
-            /* overflow: hidden; */
             margin: 0 auto;
         }
 
         .about-us-text {
             font-size: 1.2rem;
-            width: 80%;
+            width: 100%;
             line-height: 1.5;
-            /* margin: 0 auto; */
         }
 
         .about-us-services-half {
-            display: none;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .services {
+            margin: 0 auto;
+            height: 100%;
+            width: 100%;
+        }
+
+        .about-page-row-flex {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        .logo-in-about {
+            height: 10rem;
+            margin: 0 auto;
+            position: static;
+        }
+
+        .about-image-logo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
         }
     }
 </style>

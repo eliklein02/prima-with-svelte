@@ -11,7 +11,7 @@
 	}
 
 body {
-	height: 100%;
+	min-height: 100vh;
 	margin: 0;
 	color: #436f78;
 	background-position: center;
@@ -124,7 +124,6 @@ body {
 	width: 100%;
 	height: auto;
 	margin-inline: 1rem;
-	background-color: #dec699;
 	border-radius: 5px;
 	overflow: hidden;
 	cursor: pointer;
@@ -281,7 +280,7 @@ a.navbar-links {
 	color: #dec699;
 	font-size: 1.7rem;
 	margin-right: 25px;
-	font-family: bicyclette;
+	font-family: Montserrat;
 }
 
 /* about page styles */
@@ -294,7 +293,7 @@ a.navbar-links {
 }
 
 .navbar-all {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -306,13 +305,15 @@ a.navbar-links {
 .about-us-text-container {font-family: Montserrat;
 	color: #436f78;
 	display:flex;
-	flex-direction: row;
+	flex-direction: column;
 	height: 100vh;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .about-us-text-half {
-	width: 60%;
-	/* padding: 2rem; */
+	width: 50%;
+	padding: 2rem;
 	/* text-align: center; */
 	display: flex;
 	justify-content: center;
@@ -325,15 +326,16 @@ a.navbar-links {
 }
 
 .about-us-text {
-	font-size: 1.5rem;
-	width: 65%;
+	font-size: 1.3rem;
+	width: 85%;
 	line-height: 1.5;
 	margin: 0 auto;
+	/* word-wrap: break-word; */
 }
 
 .about-us-services-half {
-	width: 40%;
-	height: 100vh;
+	width: 50%;
+	/* height: 100vh; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -346,7 +348,8 @@ a.navbar-links {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 1rem;
-	background-image: radial-gradient(circle at center, white, rgba(67, 111, 120, 0.3) 30%, rgba(222, 198, 153, 0.4) 60%, white);
+	font-family: Montserrat;
+	/* background-image: radial-gradient(circle at center, white, rgba(67, 111, 120, 0.3) 30%, rgba(222, 198, 153, 0.4) 60%, white); */
 }
 
 .properties-page-each-property-link {
@@ -554,154 +557,362 @@ p.masonry-item-address {
 		flex-direction: column;
 	}
 }
+	/* contact page */
 
-    /* .image {
-        height: 100%;
-        width: 100%;
-    } */
+.icon {
+	font-size: 650px;
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	color: #cee0e3;
+	z-index: -1;
+	/* transform: rotateZ(35deg); */
+}
 
-    .property-container {
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* grid-column: 1; */
-    }
-	.property-image-container-each-property {
-		height: 70vh;
+.contact-page-container {
+	height: 100vh;
+	width: 100%;
+	/* background-color: #436f78; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-family: Montserrat;
+}
+
+.contact-page-content {
+	display: flex;
+	flex-direction: row;
+	color: #436f78;
+	width: 100%;
+	height: 100%;
+}
+
+.contact-us-ways {
+	/* font-size: 2rem; */
+	text-align: left;
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact-us-text-container {
+	margin: 1rem;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.contact-us-title {
+	font-size: 1.7rem;
+	/* margin: 1rem; */
+	/* width: 75%; */
+	margin: 0 auto 1rem auto;
+}
+
+.contact-us-text {
+	margin: 1rem;
+	font-size: 1.3rem;
+	/* width: 85%; */
+	line-height: 1.5;
+	margin: 0 auto 2rem auto;
+}
+
+.contact-us-link {
+	color: #436f78;
+	text-decoration: none;
+	font-size: 1.4rem;
+	display: block;
+	margin: 1rem 0 0 0;
+}
+
+.contact-us-links {
+	width: 75%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.form-container {
+	width: 35%;
+	/* margin: 0 auto; */
+	/* background-color: #436f78; */
+	background-image: linear-gradient(
+		to right,
+		rgba(67, 111, 120, 0.4),
+		rgba(67, 111, 120, 0.4)
+	);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.form {
+	width: 75%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.form input {
+	margin: 0.5rem 1rem;
+	padding: 1rem;
+	width: 100%;
+	border-radius: 5px;
+	border: 2px solid #436f78;
+}
+
+.form textarea {
+	margin: 0.5rem 1rem;
+	padding: 1rem;
+	width: 100%;
+	border-radius: 5px;
+	border: 2px solid #436f78;
+}
+
+.submit-form {
+	margin-block: 1rem;
+	padding: 1rem;
+	width: 35% !important;
+	border-radius: 5px;
+	border: none;
+	background-color: #f4f4f4;
+	color: #436f78;
+	font-size: 1.4rem;
+	cursor: pointer;
+	margin-left: auto !important;
+	margin-right: 0 !important;
+}
+
+@media (max-width: 768px) {
+	.contact-page-content {
+		display: flex;
+		flex-direction: column;
+		color: #436f78;
+		width: 100%;
+		height: 100%;
 	}
 
-    .property-image {
-        height: 100%;
-        width: 100%;
-    }
+	.icon {
+		font-size: 350px;
+	}
 
-	/* #map {
-		height: 50vh;
-		margin: 0;
-		padding: 0;
-	} */
-
-    .property-info {
-        height: 70vh;
-        padding: 2rem;
-        width: 100%;
-    }
-
-    .property-address {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .street {
-        margin: 0;
-        margin-bottom: 0.5em;
-        font-size: 2rem;
-        color: #436f78;
-    }
-
-    .city-state-id-page {
-        font-size: 1.5rem;
-        color: #436f78;
-        margin: 0;
-    }
-
-    .find-this-on {
-        height: 100%;
-        width: 100%;
-        /* border: 1px solid #333; */
-        margin: 0 auto;
+	.contact-us-ways {
+		/* font-size: 2rem; */
+		text-align: left;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-    }
+	}
 
-	.apartments-link {
-		text-decoration: none;
+	.contact-us-text-container {
+		margin: 1rem;
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.contact-us-text {
+		margin: 1rem auto;
+		font-size: 1.2rem;
+		width: 100%;
+		line-height: 1.4;
+		/* margin: 0 auto 1rem auto; */
+	}
+
+	.contact-us-title {
+		font-size: 1.7rem;
+		margin-top: 4rem;
+	}
+
+	.contact-us-link {
 		color: #436f78;
-		font-size: 1.5rem;
-		/* background-image: radial-gradient(circle at center, white, rgba(67, 111, 120, 0.1) 30%, rgba(222, 198, 153, 0.2) 60%, white); */
-		padding: 0.75rem;
-		border: 1px solid #dec699;
-		border-radius: 2.5px;
+		text-decoration: none;
+		font-size: 1rem;
+		display: block;
+		margin: 1rem 0 0 0;
 	}
 
-	.flex-to-reverse {
-		display: flex;
-		flex-direction: row;
-		height: 100%;
-		width: 100%;
-		grid-column: 1 / -1;
-	} 
+	.contact-us-links {
+		width: 85%;
+		text-align: left;
+		margin: 0 auto 1rem auto;
+	}
 
-	/* .other-property-images {
-		height: 100%;
+	.form-container {
 		width: 100%;
+		/* margin: 0 auto; */
+		/* background-color: #436f78; */
+		background-image: linear-gradient(
+			to right,
+			rgba(67, 111, 120, 0.4),
+			rgba(67, 111, 120, 0.4)
+		);
+		height: 100%;
 		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+		padding-block: 1rem;
 	}
 
-	.other-property-image {
-		height: 100%;
+	.form {
+		width: 85%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.form input {
+		margin: 0.5rem 1rem;
+		padding: 1rem;
 		width: 100%;
+		border-radius: 5px;
+		border: 2px solid #436f78;
+	}
+
+	.form textarea {
+		margin: 0.5rem 1rem;
+		padding: 1rem;
+		width: 100%;
+		border-radius: 5px;
+		border: 2px solid #436f78;
+	}
+
+	.submit-form {
+		margin-block: 1rem;
+		padding: 1rem;
+		width: 100% !important;
+		border-radius: 5px;
+	}
+
+	.property-container {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.property-image-container-each-property {
+		height: 19rem;
+	}
+
+	.property-info {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.property-address {
+		width: 90%;
+		margin: 0 auto;
+		height: auto;
+		padding: 2rem 0;
+		border-bottom: 1px solid #dec699;
+	}
+
+	.street {
+		font-size: 1.7rem;
+	}
+
+	.city-state-id-page {
+		font-size: 1.5rem;
+	}
+
+	/* .find-this-on {
+		height: auto;
+		padding: 1.7rem 0;
 	} */
 
 	.map-wrapper {
-		height: 50vh;
-		width: 100%;
+		height: auto;
+		width: 90%;
+		margin: 0 auto;
 	}
 
-    @media (max-width: 786px) {
-        .property-container {
-            display: flex;
-            flex-direction: column;
-            height: auto;
-        }
+	.flex-to-reverse {
+		flex-direction: column-reverse;
+	}
+}
 
-		.property-image-container-each-property {
-			height: 19rem;
-		}
+.footer {
+	background-color: #436f78;
+	color: #dec699;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3rem;
+	margin-top: 2rem;
+}
 
-        .property-info {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
+/* .footer-logo {
+	margin-left: 25px;
+	margin-right: 30px;
+	vertical-align: baseline;
+} */
 
-        .property-address {
-            width: 90%;
-			margin: 0 auto;
-			height: auto;
-			padding: 2rem 0;
-			border-bottom: 1px solid #dec699;
-        }
+.footer-links {
+	display: flex;
+	flex-direction: column;
 
-		.street {
-			font-size: 1.7rem;
-		}
+}
 
-		.city-state-id-page {
-			font-size: 1.5rem;
-		}
+.footer-link-a-tag {
+	text-decoration: none;
+	color: #dec699;
+	font-size: 1.7rem;
+	font-family: Montserrat;
+	margin: 0.3rem;
+}
 
-		.find-this-on {
-			height: auto;
-			padding: 1.7rem 0;
-		}
+.contact-us-links-footer {
+	color: #dec699;
+	display: flex;
+	flex-direction: column;
+}
 
-		.map-wrapper {
-			height: auto;
-			width: 90%;
-			margin: 0 auto;
-		}
+.contact-us-link-footer {
+	color: #dec699;
+	text-decoration: none;
+	margin: 0.5rem;
+	font-size: 1.3rem;
+	font-family: Montserrat;
+}
 
-		.flex-to-reverse {
-			flex-direction: column-reverse;
-		}
-    }
+@media (max-width: 768px) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		/* justify-content: center; */
+		align-items: center;
+		padding: 1rem;
+		gap: 2rem;
+	}
+
+	.footer-links {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		/* justify-content: center; */
+		/* align-items: center; */
+	}
+
+	.footer-link-a-tag {
+		margin: 0.5rem;
+	}
+
+	.contact-us-links-footer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact-us-link-footer {
+		margin: 0.5rem;
+	}
+}

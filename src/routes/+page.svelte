@@ -30,8 +30,8 @@
 			><img
 				src="/src/img/logo-new.png"
 				alt=""
-				height="30px"
-				width="30px"
+				height="40px"
+				width="auto"
 				class="logo"
 			/></a
 		>
@@ -53,8 +53,8 @@
 				><img
 					src="/src/img/logo-new.png"
 					alt=""
-					height="60px"
-					width="60px"
+					height="65px"
+					width="auto"
 					class="logo-2"
 				/></a
 			>
