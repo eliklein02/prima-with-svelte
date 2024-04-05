@@ -1,5 +1,4 @@
 <script>
-    import { onMount, onDestroy } from "svelte";
     import axios from "axios";
     import mapboxgl from "mapbox-gl";
     mapboxgl.accessToken =
@@ -44,7 +43,7 @@
 <div class="navbar-all">
     <a href="/"
         ><img
-            src="/src/img/logo-new.png"
+            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
             alt=""
             height="40px"
             width="auto"
@@ -71,7 +70,7 @@
         </div>
         <a href="/"
             ><img
-                src="/src/img/logo-new.png"
+                src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
                 alt=""
                 height="40px"
                 width="auto"
@@ -111,16 +110,16 @@
             {#if property.website === "Zillow.com"}
                 <a href={property.url}>
                     <img
-                        src="/src/img/z-logo-default.svg"
-                        alt=""
+                        src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282905/assets/images/zillow-logo.svg"
+                        alt="zillow-logo"
                         class="zillow-logo"
                     />
                 </a>
             {:else if property.website === "Apartments.com"}
                 <a href={property.url}>
                     <img
-                        src="/src/img/apartments-com-logo.png"
-                        alt=""
+                        src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282851/assets/images/apartments-logo.png"
+                        alt="appartments.com-logo"
                         class="apartments-com-logo"
                     />
                 </a>
