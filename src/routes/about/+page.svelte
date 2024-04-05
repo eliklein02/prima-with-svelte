@@ -114,7 +114,7 @@
                             "
                         />Finance Management
                     </div>
-                    <div class="service">
+                    <!-- <div class="service">
                         <img
                             src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282669/assets/icons/screwdriver.svg"
                             alt=""
@@ -123,7 +123,7 @@
                             class="service-icon"
                             style="filter: invert(43%) sepia(9%) saturate(1655%) hue-rotate(143deg) brightness(89%) contrast(89%);"
                         />Maintenance
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
