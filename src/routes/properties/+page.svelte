@@ -10,10 +10,10 @@
 <div class="navbar-all">
     <a href="/"
         ><img
-            src="/src/img/logo-new.png"
+            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
             alt=""
-            height="30px"
-            width="30px"
+            height="40px"
+            width="auo"
             class="logo"
         /></a
     >
@@ -37,10 +37,10 @@
         </div>
         <a href="/"
             ><img
-                src="/src/img/logo-new.png"
+                src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
                 alt=""
-                height="45px"
-                width="45px"
+                height="40px"
+                width="auto"
                 class="logo-mobile"
             /></a
         >

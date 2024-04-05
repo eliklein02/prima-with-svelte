@@ -14,10 +14,10 @@
 		</div>
 		<a href="/"
 			><img
-				src="/src/img/logo-new.png"
+				src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
 				alt=""
-				height="45px"
-				width="45px"
+				height="40px"
+				width="auto"
 				class="logo-mobile"
 			/></a
 		>
@@ -28,7 +28,7 @@
 	<div class="navbar-main">
 		<a href="/"
 			><img
-				src="/src/img/logo-new.png"
+				src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
 				alt=""
 				height="40px"
 				width="auto"
@@ -51,9 +51,9 @@
 		<div class="prima-text-container">
 			<a href="/"
 				><img
-					src="/src/img/logo-new.png"
-					alt=""
-					height="65px"
+					src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
+					alt="logo"
+					height="75px"
 					width="auto"
 					class="logo-2"
 				/></a
@@ -128,17 +128,4 @@
 			<a class="properties-link" href="/contact">Contact Us</a>
 		</div>
 	</div>
-	<!-- <div class="ers-text-container" id="about">
-		<p class="ers-text">A little bit about us</p>
-	</div>
-	<div class="about-us-text">
-		<div class="prima-in-about">PRIMA</div>
-		<div class="residential-in-about">RESIDENTIAL</div>
-		management company is a versatile organization that caters to a diverse range
-		of needs with expertise and a dedicated team. We offer comprehensive solutions
-		for property needs, including leasing, tenant relations, maintenance, and
-		asset management. Our vision is to be a trusted partner for clients in achieving
-		their goals by staying up-to-date with industry trends and delivering exceptional
-		results for long-term success.
-	</div> -->
 </div>

@@ -6,10 +6,10 @@
         </div>
         <a href="/"
             ><img
-                src="/src/img/logo-new.png"
-                alt=""
-                height="45px"
-                width="45px"
+                src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282908/assets/images/logo-new.png"
+                alt="logo"
+                height="40px"
+                width="auto"
                 class="logo-mobile"
             /></a
         >
@@ -20,10 +20,10 @@
     <div class="navbar-all">
         <a href="/"
             ><img
-                src="/src/img/logo-new.png"
-                alt=""
-                height="30px"
-                width="30px"
+                src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
+                alt="logo"
+                height="40px"
+                width="auto"
                 class="logo"
             /></a
         >
@@ -65,7 +65,7 @@
                 <div class="services">
                     <div class="service">
                         <img
-                            src="/src/img/quality-badge-thumbs-up-icon.svg"
+                            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282669/assets/icons/tenant-relations.svg"
                             alt=""
                             height="115px"
                             width="115px"
@@ -76,7 +76,7 @@
                     </div>
                     <div class="service">
                         <img
-                            src="/src/img/building-icon.svg"
+                            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282669/assets/icons/building.svg"
                             alt=""
                             height="115px"
                             width="115px"
@@ -86,7 +86,7 @@
                     </div>
                     <div class="service">
                         <img
-                            src="/src/img/home-insurance-icon.svg"
+                            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282669/assets/icons/leasing.svg"
                             alt=""
                             height="115px"
                             width="115px"
@@ -96,7 +96,7 @@
                     </div>
                     <div class="service">
                         <img
-                            src="/src/img/financial-advisor-icon.svg"
+                            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282669/assets/icons/financial-advisor.svg"
                             alt=""
                             height="115px"
                             width="115px"
@@ -106,7 +106,7 @@
                     </div>
                     <div class="service">
                         <img
-                            src="/src/img/market-research-icon.svg"
+                            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282669/assets/icons/personal-finance.svg"
                             alt=""
                             height="115px"
                             width="115px"
@@ -116,7 +116,7 @@
                     </div>
                     <div class="service">
                         <img
-                            src="/src/img/screwdriver-icon.svg"
+                            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282669/assets/icons/screwdriver.svg"
                             alt=""
                             height="115px"
                             width="115px"

@@ -9,7 +9,7 @@
     <div class="footer">
         <div class="footer-logo">
             <img
-                src="/src/img/logo-new.png"
+                src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
                 alt="prima-logo"
                 height="75px"
                 width="auto"

@@ -6,10 +6,10 @@
 <div class="navbar-all">
     <a href="/"
         ><img
-            src="/src/img/logo-new.png"
+            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
             alt=""
-            height="30px"
-            width="30px"
+            height="40px"
+            width="auto"
             class="logo"
         /></a
     >
@@ -48,7 +48,7 @@
         placeholder="Online Link (Zillow or Apartments.com"
         name="url"
     />
-    <br>
+    <br />
     <input type="text" name="website" placeholder="Website" />
     <br />
     <input type="file" name="file" id="file-upload" />

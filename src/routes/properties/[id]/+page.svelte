@@ -1,36 +1,44 @@
 <script>
-    import { onMount } from "svelte";
+    import { onMount, onDestroy } from "svelte";
+    import axios from "axios";
+    import mapboxgl from "mapbox-gl";
+    mapboxgl.accessToken =
+        "pk.eyJ1IjoiZWxpa2xlaW4wMiIsImEiOiJjbHVrZnE0ZzAwcTZ5MnBudXB4ZjVpYXZrIn0.d9Z7S5RUP-DnYmDoV8lSBA";
 
     export let data;
     const property = data.property;
 
-    let mapContainer;
+    let map;
 
-    onMount(async () => {
-        const geocoder = new google.maps.Geocoder();
-        const address =
-            property.address + ", " + property.city + ", " + property.state; // replace with your address
+    let address =
+        property.address + ", " + property.city + ", " + property.state;
 
-        geocoder.geocode({ address: address }, function (results, status) {
-            if (status == "OK") {
-                const map = new google.maps.Map(mapContainer, {
-                    center: results[0].geometry.location,
-                    zoom: 15,
-                });
+    axios
+        .get(
+            `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(address)}.json`,
+            {
+                params: {
+                    access_token: mapboxgl.accessToken,
+                },
+            },
+        )
+        .then((response) => {
+            let [longitude, latitude] = response.data.features[0].center;
 
-                new google.maps.Marker({
-                    position: results[0].geometry.location,
-                    map: map,
-                });
-            } else {
-                alert(
-                    "Geocode was not successful for the following reason: " +
-                        status,
-                );
-            }
+            map = new mapboxgl.Map({
+                container: "map",
+                style: "mapbox://styles/mapbox/streets-v11",
+                center: [longitude, latitude],
+                zoom: 17,
+            });
+            let marker = new mapboxgl.Marker();
+            marker.setLngLat([longitude, latitude]);
+            marker.addTo(map);
+            map.addControl(new mapboxgl.NavigationControl(), "top-right");
+        })
+        .catch((error) => {
+            console.error("Error geocoding address:", error);
         });
-    });
-    console.log(property.imageUrl);
 </script>
 
 <div class="navbar-all">
@@ -38,8 +46,8 @@
         ><img
             src="/src/img/logo-new.png"
             alt=""
-            height="30px"
-            width="30px"
+            height="40px"
+            width="auto"
             class="logo"
         /></a
     >
@@ -65,8 +73,8 @@
             ><img
                 src="/src/img/logo-new.png"
                 alt=""
-                height="45px"
-                width="45px"
+                height="40px"
+                width="auto"
                 class="logo-mobile"
             /></a
         >
@@ -74,36 +82,8 @@
         <a class="navbar-mobile-links" href="/properties">Properties</a>
         <a class="navbar-mobile-links" href="/contact">Contact</a>
     </div>
-    <!-- <div class="property-image-container-each-property">
-        <img class="property-image" src={property.imageUrl} alt="" />
-    </div>
+    <!-- <div id="map"></div> -->
 
-    <div class="property-address">
-        <p class="street">{property.address}</p>
-        <p class="city-state-id-page">{property.city}, {property.state}</p>
-    </div>
-
-    <div class="flex-to-reverse">
-        <div class="find-this-on">
-            <i
-                class="material-icons apartments-icon"
-                style="font-size:86px; margin-bottom:2rem">home</i
-            >
-            <a class="apartments-link" href={property.url}
-                >Find property on {property.website}</a
-            >
-        </div>
-
-        <div class="map-wrapper">
-            <div
-                id="map"
-                bind:this={mapContainer}
-                style="width: 100%; height: 400px;"
-                class="map"
-            ></div>
-        </div>
-
-    </div> -->
     <div
         class="full-property-img"
         style="background-image: url({property.imageUrl});"
@@ -120,14 +100,10 @@
         </div>
     </div>
     <div class="map-and-explore">
-        <div class="map">
-            <div
-                id="map"
-                bind:this={mapContainer}
-                style="width: 100%; height: 400px;"
-                class="map"
-            ></div>
+        <div class="map-container">
+            <div id="map" style="width: 100%;"></div>
         </div>
+
         <div class="explore-further">
             <a class="apartments-link" href={property.url}
                 >Explore further at {property.website}</a
@@ -173,9 +149,14 @@
         text-decoration: none;
     }
 
-    .map {
+    .map-container {
         width: 50%;
         /* height: 400px; */
+        height: 25rem;
+    }
+
+    #map {
+        height: 100%;
     }
 
     .explore-further {
@@ -210,7 +191,7 @@
         background-position: center;
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         text-align: center;
         font-family: Montserrat;
     }
@@ -244,21 +225,34 @@
         }
 
         .apartments-com-logo {
-            height: 65px;
+            height: 55px;
         }
 
         .map-and-explore {
             flex-direction: column-reverse;
+            margin: 1rem;
         }
 
-        .map {
+        .explore-further {
+            margin-block: 4rem;
+        }
+        .map-container {
             width: 100%;
+        }
+
+        #map {
+            width: 100%;
+            height: 25rem;
         }
 
         .explore-further {
             width: 100%;
             margin-block: 2rem;
             text-align: center;
+        }
+
+        .full-property-img {
+            align-items: flex-end;
         }
     }
 </style>

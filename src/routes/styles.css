@@ -42,10 +42,10 @@ body {
 }
 
 .parallax-1-container {
-	height: 70vh;
+	height: 80vh;
 	width: 100%;
 	background-position: center;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/src/img/residential-brooklyn.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://res.cloudinary.com/da2xsrb3n/image/upload/v1712283309/assets/images/brooklyn.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
@@ -57,7 +57,7 @@ body {
 
 
 .prima-text-container {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	/* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); */
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	padding-right: 3rem;
@@ -68,20 +68,23 @@ body {
 	flex-direction: column;
 	align-items: center;
 	font-family: Montserrat;
-	color: #dec699;
+	/* color: #fff; */
+	color: #e2bc75;
 	line-height: 1;
-	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+	/* box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4); */
 }
 
 .prima-text {
 	font-size: 7rem;
 	font-family: "lust-sans";
 	margin: 0;
+	margin-bottom: 1.3rem;
+	margin-top: 1.3rem;
 	
 }
 
 .residential-text {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-family: "bicyclette";
 	font-weight: 200;
 	margin: 0;
@@ -244,13 +247,13 @@ a.property-image-link:hover {
 }
 
 .red {
-	background-image: url('/src/img/handkey.jpg');
+	background-image: url('https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282908/assets/images/hand-keys.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .blue {
-	background-image: url('/src/img/brainstorm.jpg');
+	background-image: url('https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282908/assets/images/strategy.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -440,7 +443,7 @@ p.masonry-item-address {
 	}
 
 	.parallax-1-container {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/residential-brooklyn.jpg');
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/da2xsrb3n/image/upload/v1712283309/assets/images/brooklyn.jpg');
 
 	}
 
