@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-build": "npx prisma generate && npm run build",
+    "vercel-postbuild": "cp node_modules/@prisma/engines/*query* .vercel_build_output/functions/node/render/;cp prisma/schema.prisma .vercel_build_output/functions/node/render/"
   },
   "devDependencies": {
     "@fontsource/fira-mono": "^4.5.10",
@@ -13,6 +15,7 @@
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@types/leaflet": "^1.9.8",
+    "@types/mapbox-gl": "^3.1.0",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
     "postcss-load-config": "^5.0.2",
@@ -23,6 +26,7 @@
   "dependencies": {
     "@google-cloud/storage": "^7.9.0",
     "@prisma/client": "^5.11.0",
+    "axios": "^1.6.8",
     "bits-ui": "^0.21.1",
     "cloudinary": "^2.0.3",
     "clsx": "^2.1.0",
