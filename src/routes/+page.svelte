@@ -1,4 +1,9 @@
 <script>
+	import "./styles.css";
+	let selectedOption = "all";
+	export let data;
+
+	// const buttonClose = document.getElementById("menu-close");
 	const openMobileMenu = () => {
 		const buttonOpen = document.getElementById("menu-open-div");
 		const menu = document.getElementById("mobile-menu");
@@ -12,11 +17,6 @@
 		buttonOpen.style.display = "block";
 		menu.style.display = "none";
 	};
-	import "./styles.css";
-	let selectedOption = "all";
-	export let data;
-
-	// const buttonClose = document.getElementById("menu-close");
 </script>
 
 <div class="main-route-body">

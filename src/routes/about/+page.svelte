@@ -60,7 +60,7 @@
                 <div class="about-us-text">
                     <div class="about-image-logo-container">
                         <img
-                            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.pngg"
+                            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
                             alt="logo"
                             class="logo-in-about"
                         />

@@ -1,4 +1,5 @@
 <script>
+    export let data;
     const openMobileMenu = () => {
         const buttonOpen = document.getElementById("menu-open-div");
         const menu = document.getElementById("mobile-menu");
@@ -12,7 +13,6 @@
         buttonOpen.style.display = "block";
         menu.style.display = "none";
     };
-    export let data;
 </script>
 
 <!-- {#each data.properties as property}
