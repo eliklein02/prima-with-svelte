@@ -13,9 +13,11 @@ cloudinary.config({
 
 const db = new PrismaClient()
 
+export const load = async ({ locals }) => {
+    if (locals.auth !== true) {
+        return redirect(307, '/login')
+    }
 
-
-export const load = async () => {
     return {
         properties: await db.property.findMany()
     }

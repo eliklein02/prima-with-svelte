@@ -66,14 +66,14 @@
 				><img
 					src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
 					alt="logo"
-					height="75px"
+					height="85px"
 					width="auto"
 					class="logo-2"
 				/></a
 			>
 			<h1 class="prima-text">PRIMA</h1>
 			<h3 class="residential-text">RESIDENTIAL</h3>
-			<p class="yatll-text">Your access to luxury living</p>
+			<!-- <p class="yatll-text">Your access to luxury living</p> -->
 		</div>
 	</div>
 
