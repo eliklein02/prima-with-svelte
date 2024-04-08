@@ -27,6 +27,8 @@
     <a class="navbar-links" href="/about">About</a>
     <a class="navbar-links" href="/properties">Properties</a>
     <a class="navbar-links" href="/contact">Contact</a>
+
+    <p class="yatll-text">Your access to luxury living</p>
 </div>
 <div class="contact-page-container">
     <diV id="menu-open-div">

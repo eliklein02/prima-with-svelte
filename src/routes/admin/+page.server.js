@@ -1,6 +1,5 @@
 import { PrismaClient } from '@prisma/client';
 import { redirect } from '@sveltejs/kit';
-import { error } from '@sveltejs/kit';
 import { v2 as cloudinary } from 'cloudinary';
 
 cloudinary.config({
@@ -9,7 +8,6 @@ cloudinary.config({
     api_secret: "SY64xNTVN_jihjAA98nJMvqyZlU",
     secure: true
 });
-
 
 const db = new PrismaClient()
 

@@ -18,6 +18,7 @@ body {
 	background-size: cover;
 	background-attachment: fixed ;
 	background-repeat: no-repeat;
+	background-image: url('/src/assets/prima2.7.jpg');
 }
 
 #menu-open-div {
@@ -75,11 +76,11 @@ body {
 }
 
 .prima-text {
-	font-size: 7rem;
+	font-size: 6rem;
 	font-family: "lust-sans";
 	margin: 0;
-	margin-bottom: 1.3rem;
-	margin-top: 1.3rem;
+	margin-bottom: 1.2rem;
+	margin-top: 1.2rem;
 	
 }
 
@@ -94,6 +95,9 @@ body {
 	font-size: 1.5rem;
 	font-family: "lust-sans";
 	margin: 20px;
+	color: #dec699;
+	margin-left: auto;
+
 	
 }
 
@@ -157,6 +161,7 @@ body {
 	text-align: center;
 	font-family: Montserrat;
 	font-size: 1.5rem;
+	background-color: white;
 	color: #436f78;
 }
 
@@ -198,8 +203,9 @@ a.property-image-link:hover {
 }
 
 .parallax-text-side {
-	background-image: radial-gradient(circle at center, white, rgba(67, 111, 120, 0.3) 30%, rgba(222, 198, 153, 0.4) 60%, white);
+	/* background-image: radial-gradient(circle at center, white, rgba(67, 111, 120, 0.3) 30%, rgba(222, 198, 153, 0.4) 60%, white); */
 	width: 50%;
+	background-color: rgb(232, 229, 229);
 	height: auto;
 	display: flex;
 	flex-direction: column;
@@ -224,15 +230,40 @@ a.property-image-link:hover {
 
 }
 
-.properties-link {
+/* .properties-link {
 	text-decoration: none;
-	color: #436f78;
+	color: #dec699;
 	font-size: 1.5rem;
 	font-family: Montserrat;
-	background-color: #dec699;
+	background-color: #436f78;
 	padding: 0.75rem;
-	border: 1px solid #436f78;
 	border-radius: 2.5px;
+} */
+
+.properties-link {
+    position: relative;
+    text-decoration: none;
+    color: #dec699;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    background-color: #436f78;
+    padding: 0.75rem;
+    border-radius: 2.5px;
+}
+
+.properties-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #dec699;
+    transition: width 0.2s ease-out;
+}
+
+.properties-link:hover::before {
+    width: 100%;
 }
 
 .parallax-image-side {
@@ -275,7 +306,7 @@ a.property-image-link:hover {
 .logo {
 	margin-left: 25px;
 	margin-right: 30px;
-	vertical-align: baseline;
+	/* vertical-align: baseline; */
 }
 
 a.navbar-links {
@@ -465,6 +496,7 @@ p.masonry-item-address {
 		font-size: 1.5rem;
 		text-align: center;
 		margin: 10px;
+		color: #dec699;
 	}
 
 	.ers-text {
@@ -475,6 +507,7 @@ p.masonry-item-address {
 		font-size: 1.5rem;
 		margin: 3vh;
 		width: 100%;
+		background-color: white;
 	}
 
 	.featured-properties-container {
@@ -692,6 +725,12 @@ p.masonry-item-address {
 }
 
 @media (max-width: 768px) {
+
+	.contact-page-container{
+		height: auto;
+	
+	}
+	
 	.contact-page-content {
 		display: flex;
 		flex-direction: column;

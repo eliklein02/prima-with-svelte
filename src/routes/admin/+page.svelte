@@ -16,26 +16,11 @@
     <a class="navbar-links" href="/about">About</a>
     <a class="navbar-links" href="/properties">Properties</a>
     <a class="navbar-links" href="/contact">Contact</a>
+
+    <p class="yatll-text">Your access to luxury living</p>
 </div>
 
-<h1>Hi, Moishe F.</h1>
-
-<h3>Edit Properties</h3>
-{#if properties.length !== 0}
-    {#each properties as property}
-        <div style="border: 1px solid black;">
-            <h3>{property.address}</h3>
-            <button>Edit</button>
-            <form action="?/deleteProperty&id={property.id}" method="post">
-                <button type="submit">Delete</button>
-            </form>
-        </div>
-    {/each}
-{:else}
-    <p>No properties to display</p>
-{/if}
-<br />
-<h3>Add New Property</h3>
+<h1>Add New Property</h1>
 <form action="?/addProperty" method="post" enctype="multipart/form-data">
     <input type="text" name="address" placeholder="Address" />
     <br />
@@ -55,3 +40,21 @@
     <br />
     <input type="submit" />
 </form>
+<br />
+<br />
+<br />
+<h1>Edit Properties</h1>
+{#if properties.length !== 0}
+    {#each properties as property}
+        <div style="border: 1px solid black;">
+            <h3>{property.address}</h3>
+            <button>Edit</button>
+            <form action="?/deleteProperty&id={property.id}" method="post">
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+    {/each}
+{:else}
+    <p>No properties to display</p>
+{/if}
+<br />
