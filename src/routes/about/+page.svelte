@@ -59,16 +59,18 @@
         <div class="about-page-row-flex">
             <div class="about-us-text-half">
                 <div class="about-us-text">
-                    <div class="about-image-logo-container">
-                        <img
-                            src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
-                            alt="logo"
-                            class="logo-in-about"
-                        />
-                    </div>
+                    <div class="about-us-logo-text">
+                        <div class="about-image-logo-container">
+                            <img
+                                src="https://res.cloudinary.com/da2xsrb3n/image/upload/v1712282907/assets/images/logo-new.png"
+                                alt="logo"
+                                class="logo-in-about"
+                            />
+                        </div>
 
-                    <div class="prima-in-about">PRIMA</div>
-                    <div class="residential-in-about">RESIDENTIAL</div>
+                        <div class="prima-in-about">PRIMA</div>
+                        <div class="residential-in-about">RESIDENTIAL</div>
+                    </div>
                     management company is a versatile organization that caters to
                     a diverse range of needs with expertise and a dedicated team.
                     We offer comprehensive solutions for property needs, including
@@ -148,12 +150,18 @@
 </div>
 
 <style>
+    .about-us-logo-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin-right: auto;
+        /* margin-bottom: 1rem; */
+    }
     .logo-in-about {
         height: 10rem;
         width: auto;
-        position: relative;
-        top: 0;
-        right: 15px;
     }
 
     .services {
@@ -188,14 +196,14 @@
 
     .prima-in-about {
         font-size: 5.5rem;
-        margin-bottom: 0;
+        margin-block: 1rem;
         font-family: "lust-sans";
         line-height: 0.7;
     }
 
     .residential-in-about {
         display: block;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 0;
     }
 
@@ -204,6 +212,10 @@
     }
 
     @media (max-width: 768px) {
+        .about-us-logo-text {
+            margin: 0 auto;
+        }
+
         .about-us-text-container {
             display: flex;
             flex-direction: column;
