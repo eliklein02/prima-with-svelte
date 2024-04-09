@@ -79,8 +79,8 @@ body {
 	font-size: 6rem;
 	font-family: "lust-sans";
 	margin: 0;
-	margin-bottom: 1.2rem;
-	margin-top: 1.2rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
 	
 }
 
@@ -485,7 +485,7 @@ p.masonry-item-address {
 	}
 
 	.prima-text {
-		font-size: 5rem;
+		font-size: 5.5rem;
 	}
 
 	.residential-text {
